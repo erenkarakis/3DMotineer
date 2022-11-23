@@ -28,7 +28,7 @@ public class Animation_Code : MonoBehaviour
         {
             float x = float.Parse(points[0 + (i * 3)]) / 100.0f;
             float y = float.Parse(points[1 + (i * 3)]) / 100.0f;
-            float z = float.Parse(points[2 + (i * 3)]) / 300.0f;
+            float z = float.Parse(points[2 + (i * 3)]) / 300.0f; //Z axis value can be change every diffrent video. So if motion isn't look good you can change the divisive value.
             Body[i].transform.localPosition = new Vector3(x, y, z);
         }
 
